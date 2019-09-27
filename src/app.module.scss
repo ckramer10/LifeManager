@@ -1,0 +1,18 @@
+.appWrapper {
+  height: 100vh;
+  overflow: hidden;
+
+  &.darkMode {
+    background-color: #282c35;
+    color: white;
+  }
+  .appHeader {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .tabNav {
+    margin-top: 20px;
+  }
+}

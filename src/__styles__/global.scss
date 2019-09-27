@@ -1,0 +1,37 @@
+// Global Variables
+$screen-sm-max: 767px;
+$screen-md-min: 768px;
+$screen-md-max: 1023px;
+$screen-lg-min: 1024px;
+$screen-xl-min: 1280px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+@mixin tablet-and-wider {
+  @media (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin large-tablet {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $screen-xl-min) {
+    @content;
+  }
+}
