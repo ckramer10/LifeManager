@@ -9,10 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from "./redux/reducers";
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 const store = createStore(
-    rootReducer, /* preloadedState, */
-    +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    rootReducer,
+    composeWithDevTools()
 );
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));

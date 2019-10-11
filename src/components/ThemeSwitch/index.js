@@ -19,7 +19,11 @@ const ThemeSwitch = ({ isDarkMode, dispatch }) => {
         dispatch({ type: 'TOGGLE_DARK_MODE' });
     };
 
-    return <Switch {...switchProps}/>
+    return(
+        <div className="switchWrapper">
+            <Switch {...switchProps}/>
+        </div>
+    )
 };
 
 const mapStateToProps = (state) => {

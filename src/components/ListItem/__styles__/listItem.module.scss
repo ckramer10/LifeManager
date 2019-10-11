@@ -1,0 +1,28 @@
+.listItem {
+  display: flex;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: dodgerblue;
+
+  &.complete {
+    background-color: green;
+  }
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    .task {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .timestamp {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+}

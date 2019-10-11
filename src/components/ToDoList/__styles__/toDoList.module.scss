@@ -1,0 +1,49 @@
+.spinnerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .spinner {
+    margin-top: 250px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.listWrapper {
+  padding: 0 20px;
+
+  .addTodoFormWrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    .addTodoForm {
+      input {
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: #282c35;
+        color: white;
+      }
+
+      button {
+        margin-left: 20px;
+        border: none;
+        border-radius: 4px;
+        color: #282c35;
+      }
+    }
+
+  }
+  .incompleteListWrapper {
+    margin-top: 40px;
+
+    .incompleteHeader {
+
+    }
+
+    .listItems {
+
+    }
+  }
+}

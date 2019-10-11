@@ -1,11 +1,33 @@
 .appWrapper {
+  overflow: auto;
   height: 100vh;
-  overflow: hidden;
 
   &.darkMode {
     background-color: #282c35;
     color: white;
+
+    :global {
+      .switchWrapper {
+        .themeSwitch {
+          .react-switch-bg {
+            background-color: sandybrown !important;
+          }
+        }
+      }
+
+      .nav {
+        .nav-item {
+          .nav-link {
+            &.active {
+              background-color: #282c35;
+              color: white;
+            }
+          }
+        }
+      }
+    }
   }
+
   .appHeader {
     margin-top: 20px;
     font-size: 30px;
@@ -14,5 +36,17 @@
 
   .tabNav {
     margin-top: 20px;
+
+    .navItem {
+      margin-left: 10px;
+
+      &:hover {
+        background-color: #282c35;
+      }
+
+      .navLink {
+
+      }
+    }
   }
 }
